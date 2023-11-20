@@ -1,0 +1,1 @@
+{"company":["Motivate International, Inc.","PBSC Urban Solutions"],"gbfs_href":"https://tor.publicbikesystem.net/ube/gbfs/v1/","href":"/v2/networks/bixi-toronto","id":"bixi-toronto","location":{"city":"Toronto, ON","country":"CA","latitude":43.653226,"longitude":-79.3831843},"name":"Bike Share Toronto"}
