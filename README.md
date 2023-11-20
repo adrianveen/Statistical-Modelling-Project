@@ -33,22 +33,22 @@ The regression model chosen was a multivariate linear regression model. As there
 ### Step 4 - Interpreting
 The final step is interpreting the regression model and EDA performed on the data. 
 
-The regression model produced an R-squared value of only 0.08, implying that the model was not a very good fit. With the number of free bikes as the dependent variable, the most noteworthy independent variable was the latitude. As the latitude is always positive north of the equator, the negative coefficient of the latitude implied that the further north you go, you will see a larger number of free bikes. 
+The regression model produced an R-squared value of only 0.08, implying that the model was not a very good fit. With the number of free bikes as the dependent variable, the most noteworthy independent variable was the latitude. As the latitude is always positive north of the equator, the negative coefficient of the latitude implied that the further north you go, you will see a smaller number of free bikes. 
 
 Thinking about the layout of Toronto, this intuitively makes sense: major entertainment, restaurant, and bar areas are focused around east-west corridors, such as bloor, dundas, college, queen and king. As they are running east-west, they would have a similar latitude. 
 
-As a result, more bike stations are focused around these corridors, and less so along north south streets. This can be seen in the map with the coordinates plotted. From the heatmap, a weak correlation was seen between the price and the latitude as well, implying that more expensive areas for entertainment and eating tend to be further south in the city. 
+As a result, more bike stations are focused around these corridors, and less so along north south streets. This can be seen in the map with the coordinates plotted. From the heatmap, a weak correlation was seen between the price and the latitude as well, implying that more expensive areas for entertainment and eating tend to be further south in the city.
 
 ## Results
-(fill in what you found about the comparative quality of API coverage in your chosen area and the results of your model.)
-Due to API call limits, only 200 bike station locations were chosen to call the Yelp and Foursquare APIs. Also in order to keep the data size manageable, the limit of POIs around each bike station was limited to 10 for each API. This also ensure that the results were of similar sizes.
+Due to API call limits, only 200 bike station locations were chosen to call the Yelp and Foursquare APIs. Also in order to keep the data size manageable, the number of POIs around each bike station was limited to 10 for each API. This also ensured that the datasets were of similar sizes.
 
-As for the quality of the APIs, it initially seemed that Yelp had an advantage due to the price and rating fields. But after diving deeper into the documentation for Foursquare, it became apparent that Fourquare had many more *potential* data points. Whether or not these were all available in Toronto is unclear. It was also discovered that Fourquare also had rating and price information available, negating Yelp's advantage. 
+As for the quality of the APIs, it initially seemed that Yelp had an advantage due to the price and rating fields. But after diving deeper into the documentation for Foursquare, it became apparent that Fourquare had many more *potential* data points. Whether or not these were all available in Toronto is unclear. It was discovered that Fourquare also had rating and price information available, negating Yelp's advantage. 
 
-The major issue noticed in the API results was that Yelp seemed to have data for locations that had permanently closed. The ratings also differed greatly from some locations when compared to google, which arguable has more traffic, and likely more accurate ratings. Although this last point was not confirmed on a larger scale, it was not seen in the Foursquare data to the same degree. 
+The major issue noticed in the API results was that Yelp seemed to have data for locations that had permanently closed. The ratings also differed greatly for some locations when compared to google, which arguably has more traffic, and likely more accurate ratings. Although this last point was not confirmed on a larger scale, it was not seen in the Foursquare data to the same degree. 
 
-In order to further compare the two, a more focused data set would need to be pulled, such as the maximum number of results returned for a single location. From there, one could discern if there were any discrepancies between the data provided by either API, and then confirm with a third source to attempt to confirm the accuracy. 
+In order to further compare the two, a more focused data set would need to be pulled, such as the maximum number of results returned for a single location (1000pois/station). From there, one could discern if there were any discrepancies between the data provided by either API, and then confirm with a third source to determine the accuracy the accuracy. 
 
+As the data is a snapshot of the bike stations, the time that the city bike data is called has a significant impact on the analysis. Given the relation to latitude, it appears that many bikes had been moved to more southern parts of the city. As the data was taken just before 4 pm on a Friday, it could imply that the bikes were used by commuters, which would cause them to take the bikes areas of the city that have a high concentration of office buildings, and had not yet left work.  
 
 ## Challenges 
 There were many challenges faced during the time of this project, however, due to lessons learned from the SQL data cleaning project, they were handled more efficiently, or ignored as it was clear they would have little impact on the project. 
