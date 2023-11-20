@@ -33,7 +33,7 @@ The regression model chosen was a multivariate linear regression model. As there
 ### Step 4 - Interpreting
 The final step is interpreting the regression model and EDA performed on the data. 
 
-The regression model produced an R-squared value of only 0.08, implying that the model was not a very good fit. With the number of free bikes as the dependent variable, the most noteworthy independent variable was the latitude. As the latitude is always negative north of the equator, the negative coefficient of the latitude implied that the further north you go (further away from zero in the negative direction for the latitude), you will see a larger number of free bikes. 
+The regression model produced an R-squared value of only 0.08, implying that the model was not a very good fit. With the number of free bikes as the dependent variable, the most noteworthy independent variable was the latitude. As the latitude is always positive north of the equator, the positive coefficient of the latitude implied that the further north you go, you will see a larger number of free bikes. 
 
 Thinking about the layout of Toronto, this intuitively makes sense: major entertainment, restaurant, and bar areas are focused around east-west corridors, such as bloor, dundas, college, queen and king. As they are running east-west, they would have a similar latitude. 
 
