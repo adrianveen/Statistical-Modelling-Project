@@ -1,7 +1,7 @@
 # Final-Project-Statistical-Modelling-with-Python
 
 ## Project/Goals
-The goal of the projects is to demonstrate out knowledge in handling multiple APIs, combing datasets of different sources, creating a database, and performing EDA and regression analysis on the data. 
+The goal of the projects is to demonstrate our knowledge in handling multiple APIs, combing datasets of different sources, creating a database, and performing EDA and regression analysis on the data. 
 
 The above goals also include data cleaning, data visualization, and running and fine tuning regression models. 
 
